@@ -19,6 +19,19 @@
         $name = "Sarungbam Alen Meetei";
         echo "He really liked the name $name <br>";
         echo "But didn't like being $age <br>";
+        $isMale = true;
+        $height = 5.74146982;
+        $isTall = ($height >= 5.7) ? true : false;
+        //$isTall = $height >= 5.7;
+        if ($isMale && $isTall) {
+            echo "He is a tall male<br>";
+        } elseif ($isMale && !$isTall) {    
+            echo "He is a short male<br>";
+        } elseif (!$isMale && $isTall) {
+            echo "He is not a male but is tall<br>";
+        } else {
+            echo "He is not a male and not tall<br>";
+        }
     ?>
 </body>
 </html>
