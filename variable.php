@@ -12,6 +12,7 @@
         echo "He really liked the name Alen <br>";
         echo "But didn't like being 21 <br>";
         echo "<hr>";
+        
         $name = "Alen";
         $age = 21;
         echo "There once was a man named $name <br>";
@@ -33,6 +34,7 @@
             echo "He is not a male and not tall<br>";
         }
         echo "<hr>";
+        
         $phrase = "To be or not to be, that is the question.";
         echo strtolower($phrase) . "<br>";
         echo strtoupper($phrase) . "<br>";
@@ -41,7 +43,34 @@
         echo $phrase[10] . "<br>";
         echo str_replace("be", "meetei", $phrase) . "<br>";
         echo substr($phrase, 0, 14) . "<br>";
+        echo "<hr>";
 
+        $number = 10;
+        echo $number . "<br>";
+        $number += 5;
+        echo $number . "<br>";
+        $number *= 10;
+        echo $number . "<br>";
+        $number /= 2;
+        echo $number . "<br>"; 
+        $number -= 15;
+        echo $number . "<br>";
+        $number %= 7;
+        echo $number . "<br>";
+        $number++;
+        echo $number . "<br>";
+        $number--;
+        echo $number . "<br>";
+        $number = -10;
+        echo abs($number) . "<br>";
+        echo pow(2, 3) . "<br>";
+        echo sqrt(144) . "<br>";
+        echo max(2, 10) . "<br>";
+        echo min(2, 10) . "<br>";
+        echo round(4.6) . "<br>";
+        echo ceil(4.1) . "<br>";
+        echo floor(4.9) . "<br>";
+        
     ?>
 </body>
 </html>
