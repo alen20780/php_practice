@@ -28,7 +28,7 @@
         $height = filter_input(INPUT_GET, 'height', FILTER_VALIDATE_FLOAT);
         
         // Only show output when the form is submitted
-        if ($name !== null || $age !== null) {
+        if ($name !== null || $age !== null || $gender !== null || $height !== null) {
             // Provide defaults if empty/invalid
             $displayName = $name !== null && $name !== '' ? $name : 'unknown';
             $displayAge  = $age !== false && $age !== null ? $age : 'unknown';
