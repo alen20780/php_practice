@@ -58,10 +58,16 @@
         }
         if($displayGender == "unknown") {
             echo "Gender is unknown<br>";
+        } 
+        if ($displayGender && $isTall) {
+            echo "He is a tall male<br>";
+        } elseif ($displayGender && !$isTall) {    
+            echo "He is a short male<br>";
+        } elseif (!$displayGender && $isTall) {
+            echo "He is not a male but is tall<br>";
+        } else {
+            echo "He is not a male and not tall<br>";
         }
-        echo ($displayGender && $isTall) ? "He is a tall male<br>" : "He is a short male<br>";
-        echo (!$displayGender && $isTall) ? "He is not a male but is tall<br>" : "He is not a male and not tall<br>";
-        
     }
     ?>
 
