@@ -52,7 +52,6 @@
         echo "He really liked the name $displayName <br>";
         echo "But didn't like being $displayName <br>";
         $isTall = ($heightValue >= 5.7) ? true : false;
-        //$isTall = $height >= 5.7;
         if ($isTall== "unknown") {
             echo "Height is unknown<br>";
         }
