@@ -7,11 +7,17 @@
 </head>
 <body>
     <form action="getting_User_Input.php" method="get">
-        Name: <input type="text" name="username">
+        Name: 
         <br>
-        Age: <input type="number" name="age">
+        <input type="text" name="username">
         <br>
-        Height: <input type="number" step="0.01" name="height">
+        Age: 
+        <br>
+        <input type="number" name="age">
+        <br>
+        Height:
+        <br> 
+        <input type="number" step="0.01" name="height">
         <br>
         Gender:
         <input type="radio" name="gender" value="male" id="gender_male"> <label for="gender_male">Male</label>
