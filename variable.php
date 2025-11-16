@@ -32,6 +32,16 @@
         } else {
             echo "He is not a male and not tall<br>";
         }
+        echo "<hr>";
+        $phrase = "To be or not to be, that is the question.";
+        echo strtolower($phrase) . "<br>";
+        echo strtoupper($phrase) . "<br>";
+        echo strlen($phrase) . "<br>";
+        echo $phrase[0] . "<br>";
+        echo $phrase[10] . "<br>";
+        echo str_replace("be", "meetei", $phrase) . "<br>";
+        echo substr($phrase, 0, 14) . "<br>";
+
     ?>
 </body>
 </html>
